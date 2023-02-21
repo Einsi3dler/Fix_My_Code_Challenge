@@ -23,9 +23,11 @@ ARGV.each do |arg|
             p = 0
             result.each do |x|
               if i_arg < x
-                result.insert(i - 1, i_arg)
+                result.insert(p, i_arg)
                 is_inserted = true
                 break
+              else
+                p +=1
               end
             end
         end
